@@ -13,14 +13,30 @@
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 		<title>Craig Fouts</title>
+		
+		<style>
+			@media (max-width: 1000px)
+			{
+				.profilepicture
+				{
+					display: none;
+				}
+				
+				.display-1
+				{
+					text-align: center;
+				}
+			}
+		</style>
 	</head>
 	
 	<body>
 		<!-- Header -->
 		<div class="jumbotron jumbotron-fluid bg-dark mb-0" style="background:radial-gradient(circle, #8b0000, #333);">
 			<div class="container">
-				<img src="assets/pictures/profile.jpg" class="float-left img-fluid" alt="profile picture" width="254">
-				<h1 class="display-1" style="color:white;"><span class="align-text-top" style="color:#333">|</span> Craig Fouts</h1>
+				<!-- img src="assets/pictures/profile.jpg" class="float-left img-fluid" alt="profile picture" width="254"> -->
+				<img src="assets/pictures/profile.jpg" class="float-left img-fluid rounded shadow profilepicture" alt="profile picture" width="275">
+				<h1 class="display-1" style="color:white;"><span class="align-text-top profilepicture" style="color:#333">|</span> Craig Fouts</h1>
 			</div>
 		</div>
 		
@@ -29,40 +45,26 @@
 			<a class="navbar-brand" href="index.html">
 				<img src="assets/pictures/logo.png" width="30" alt="logo">
 			</a>
-			<ul class="navbar-nav">
-				<li class="nav-item">
-					<a class="nav-link active" href="index.html">Home</a>
-				</li>
-				<li class="nav-item dropdown">
-					<a class="nav-link dropdown-toggle" id="navbardrop" data-toggle="dropdown" href="#">Projects</a>
-					<div class="dropdown-menu">
-						<a class="dropdown-item" href="virtual-assistant.html">Virtual Assistant</a>
-						<a class="dropdown-item" href="#">Remote Light Switch</a>
-					</div>
-				</li>
-				<li class="nav-item dropdown">
-					<a class="nav-link dropdown-toggle" id="navbardrop" data-toggle="dropdown" href="#">Math</a>
-					<div class="dropdown-menu">
-						<a class="dropdown-item" href="#">Bertrand's Postulate</a>
-						<a class="dropdown-item" href="#">Collatz's Conjecture</a>
-						<a class="dropdown-item" href="#">Fermat's Theorem</a>
-						<a class="dropdown-item" href="#">Goldbach's Conjecture</a>
-						<a class="dropdown-item" href="#">Wilson's Theorem</a>
-					</div>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="https://www.teespring.com/craigfouts" target="_blank">Merch</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#contact">Contact</a>
-				</li>
-			</ul>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar"><span class="navbar-toggler-icon"></span></button>
+			<div class="collapse navbar-collapse" id="collapsibleNavbar">
+				<ul class="navbar-nav">
+					<li class="nav-item">
+						<a class="nav-link active" href="index.html">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Projects</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Math</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#contact">Contact</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="https://www.teespring.com/craigfouts" target="_blank">Merch</a>
+					</li>
+				</ul>
+			</div>
 		</nav>
-		
-		<div style="margin-top:200px;padding:15px 15px 2500px;font-size:30px">
-			<h3>Hi, welcome to my website! I'm still in the process of building it so for now it's a bit incomplete. Until I finish, please visit my old <a href="https://www.bit10tech.com">website</a> to see some of my previous projects.</h3>
-			<br>
-			<p>Lorem ipsum dolor dummy text sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-		</div>
 	</body>
 </html>
