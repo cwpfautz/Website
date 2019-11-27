@@ -15,15 +15,29 @@
 		<title>Craig Fouts</title>
 		
 		<style>
+			.mobile
+			{
+				display: none;
+			}
+		
 			@media (max-width: 1000px)
 			{
+				.mobile
+				{
+					display: inline;
+				}
+				
 				.nonmobile
 				{
 					display: none;
 				}
 				
-				.display-1
+				.display-1, col-sm
 				{
+					text-align: center;
+				}
+				
+				.col-sm{
 					text-align: center;
 				}
 			}
@@ -65,5 +79,18 @@
 				</ul>
 			</div>
 		</nav>
-		</body>
+		
+		<!-- About me -->
+		<div class="container" style="margin-top:30px">
+			<div class="row">
+				<div class="col-sm text-center mobile">
+					<img src="assets/pictures/profile.jpg" class="float img-fluid rounded shadow" alt="profile picture" width="275">
+				</div>
+				<div class="col-sm">
+					<h1 class="display-4">About Me</h1>
+					<p>Some text about me</p>
+				</div>
+			</div>
+		</div>
+	</body>
 </html>
