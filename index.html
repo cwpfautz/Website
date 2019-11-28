@@ -114,7 +114,7 @@
 	
 	<body>
 		<!-- Header -->
-		<div class="jumbotron jumbotron-fluid bg-dark mb-0" style="background:radial-gradient(circle, #8b0000, #333);">
+		<div class="jumbotron jumbotron-fluid bg-dark mb-0" id="home" style="background:radial-gradient(circle, #8b0000, #333);">
 			<div class="container">
 				<img src="assets/pictures/profile.jpg" class="float-left img-fluid rounded shadow nonmobile" alt="profile picture" width="275">
 				<h1 class="display-1" style="color:white;"><span class="align-text-top nonmobile" style="color:#333">|</span> Craig Fouts</h1>
@@ -124,26 +124,26 @@
 		
 		<!-- Nav bar -->
 		<nav class="navbar navbar-expand-sm bg-dark navbar-dark shadow sticky-top" style="background-color:black;">
-			<a class="navbar-brand" href="index.html">
+			<a class="navbar-brand" href="#home">
 				<img src="assets/pictures/logo.png" width="30" alt="logo">
 			</a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar"><span class="navbar-toggler-icon"></span></button>
 			<div class="collapse navbar-collapse" id="collapsibleNavbar">
 				<ul class="navbar-nav">
 					<li class="nav-item">
-						<a class="nav-link active" href="index.html">About</a>
+						<a class="nav-link" href="#about" style="color:white;">About</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#">Projects</a>
+						<a class="nav-link" href="#projects" style="color:white;">Projects</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#">Math</a>
+						<a class="nav-link" href="#math" style="color:white;">Math</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#contact">Contact</a>
+						<a class="nav-link" href="#contact" style="color:white;">Contact</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="https://www.teespring.com/craigfouts" target="_blank">Merch</a>
+						<a class="nav-link" href="https://www.teespring.com/craigfouts" target="_blank" style="color:white;">Merch</a>
 					</li>
 				</ul>
 			</div>
@@ -158,12 +158,12 @@
 					<img src="assets/pictures/profile.jpg" class="img-fluid rounded shadow" alt="profile picture" id="profile" width="300">
 				</div>
 				<div class="col-sm" id="about" style="margin-top:5px;">
-					<h1 class="display-4">About Me</h1>
+					<h1 class="display-4" id="about">About</h1>
 					<p class="description">
 						Hello, welcome to my website! I am currently a second year student at 
-						<a href="https://www.asc.ohio-state.edu/kilcup.1/the.html" style="color:black;">The</a> Ohio State University studying Mathematics and 
-						Engineering Physics with a concentration in Computer Science. In the past I developed some simple GUIs and robotic systems. In the 
-						future I am interested in exploring machine learning.
+						<a href="https://www.asc.ohio-state.edu/kilcup.1/the.html" target="_blank" style="color:black;">The</a> Ohio State University studying 
+						Mathematics and Engineering Physics with a concentration in Computer Science. In the past I developed some simple GUIs and robotic systems. In 
+						the future I am interested in exploring machine learning.
 					</p>
 				</div>
 			</div>
@@ -172,7 +172,7 @@
 			<!-- Projects -->
 			<div class="row" style="margin-top:25px">
 				<div class="col-sm">
-					<h1 class="display-4">Projects</h1>
+					<h1 class="display-4" id="projects">Projects</h1>
 				</div>
 			</div>
 			<div class="row" style="margin-top:25px; margin-bottom:25px;">
@@ -202,7 +202,7 @@
 			<!-- Math -->
 			<div class="row" style="margin-top:50px;">
 				<div class="col-sm">
-					<h1 class="display-4">Mathematics</h1>
+					<h1 class="display-4" id="math">Math</h1>
 				</div>
 			</div>
 			<div class="row" style="margin-top:25px;">
