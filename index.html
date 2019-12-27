@@ -30,7 +30,6 @@
 				background-color: #8b0000;
 				border-color: #333;
 			}
-			
 			.mobile
 			{
 				display: none;
@@ -115,12 +114,6 @@
 				}
 			}
 		</style>
-		<script>
-			$('.navbar a').click(function()
-			{
-				$(".navbar").collapse('hide');
-			});
-		</script>
 	</head>
 	
 	<body>
@@ -135,26 +128,26 @@
 		
 		<!-- Nav bar -->
 		<nav class="navbar navbar-expand-sm bg-dark navbar-dark shadow sticky-top" style="background-color:black;">
-			<a class="navbar-brand" href="#home">
+			<a class="navbar-brand" href="https://www.craigfouts.com">
 				<img src="assets/pictures/logo.png" width="30" alt="logo">
 			</a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar"><span class="navbar-toggler-icon"></span></button>
 			<div class="collapse navbar-collapse" id="collapsibleNavbar">
-				<ul class="navbar-nav">
+				<ul class="navbar-nav" data-toggle="collapse" data-target=".navbar-collapse.show">
 					<li class="nav-item">
-						<a class="nav-link text-white" href="#home">Home</a>
+						<a class="nav-link" href="#home">Home</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link text-white" href="#projects">Projects</a>
+						<a class="nav-link" href="#projects">Projects</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link text-white" href="#math">Math</a>
+						<a class="nav-link" href="#math">Math</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link text-white" href="#contact">Contact</a>
+						<a class="nav-link" href="#contact">Contact</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link text-white" href="https://www.teespring.com/craigfouts" target="_blank">Merch</a>
+						<a class="nav-link" href="https://www.teespring.com/craigfouts" target="_blank">Merch</a>
 					</li>
 				</ul>
 			</div>
