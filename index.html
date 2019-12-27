@@ -66,6 +66,12 @@
 				background: #8b0000;
 			}
 			
+			.card
+			{
+				position: relative;
+				z-index: 2;
+			}
+			
 			.mobile
 			{
 				display: none;
@@ -106,6 +112,8 @@
 				.description
 				{
 					font-size: 17px;
+					position: relative;
+					z-index: 2;
 				}
 			}
 			
@@ -139,11 +147,13 @@
 				.header::before
 				{
 					display: block;
+					position: relative;
 					content: " ";
 					margin-top: -250px;
 					height: 250px;
 					visibility: hidden;
 					pointer-events: none;
+					z-index: 1;
 				}	
 				
 				.description
@@ -345,12 +355,13 @@
 			<div class="modal-dialog">
 				<div class="modal-content">
 					<div class="modal-body">
-						<p>I can't find the code for this project. I'll do a new version with the STM32 F3 Discovery at some point in the near future.</p>
+						<p>Sorry I can't find the code for this project. I'll do a new version with the STM32 F3 Discovery at some point in the near future and uplode that
+						project's code then.</p>
 					</div>
 				</div>
 			</div>
 		</div>
-		<div id="cpppop" class="modal fade" rold="dialog">
+		<div id="cpppop" class="modal fade" role="dialog">
 			<div class="modal-dialog">
 				<div class="modal-content">
 					<div class="modal-body">
