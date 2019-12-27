@@ -25,6 +25,16 @@
 				margin-top: 25px;
 			}
 			
+			.header::before
+			{
+				display: block;
+				content: " ";
+				margin-top: -0px;
+				height: 0px;
+				visibility: hidden;
+				pointer-events: none;
+			}
+			
 			.btn
 			{
 				background-color: #8b0000;
@@ -56,6 +66,16 @@
 				{
 					text-align: center;
 				}
+				
+				.header::before
+				{
+					display: block;
+					content: " ";
+					margin-top: -75px;
+					height: 75px;
+					visibility: hidden;
+					pointer-events: none;
+				}	
 				
 				.description
 				{
@@ -89,6 +109,16 @@
 				{	
 					margin-top: 0;
 				}
+				
+				.header::before
+				{
+					display: block;
+					content: " ";
+					margin-top: -300px;
+					height: 300px;
+					visibility: hidden;
+					pointer-events: none;
+				}	
 				
 				.description
 				{
@@ -176,7 +206,7 @@
 			<!-- Projects -->
 			<div class="row" style="margin-top:25px">
 				<div class="col-sm">
-					<h1 class="display-4" id="projects">Projects</h1>
+					<h1 class="display-4 header" id="projects">Projects</h1>
 				</div>
 			</div>
 			<div class="row" style="margin-top:25px; margin-bottom:25px;">
@@ -212,7 +242,7 @@
 			<!-- Math -->
 			<div class="row" style="margin-top:50px;">
 				<div class="col-sm">
-					<h1 class="display-4" id="math">Math</h1>
+					<h1 class="display-4 header" id="math">Math</h1>
 				</div>
 			</div>
 			<div class="row" style="margin-top:25px;">
