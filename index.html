@@ -11,7 +11,368 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstra<!DOCTYPE html>
+
+<html lang="en-US">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="author" content="Craig W Fouts">
+		<meta name="description" content="My online resume and project library">
+		<meta name="keywords" content="Craig, Fouts, Computer, Math, Physics, Engineering, Student, Ohio">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+		<link rel="shortcut icon" href="assets/icons/icon.ico" type="image/gif">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+		<script src="https://kit.fontawesome.com/7f264956e9.js" crossorigin="anonymous"></script>		
+		<title>Craig Fouts</title>
+		
+		<style>
+			html
+			{
+				scroll-behavior: smooth;
+			}
+			
+			footer
+			{
+				width: 100%;
+				height 100px;
+				margin-bottom: 25px;
+			}
+			
+			footer a 
+			{
+				color: #8b0000;
+				margin: 25px;
+			}
+			
+			footer a:hover
+			{
+				color: #007bff;
+				text-decoration: none;
+			}
+			
+			#secondrow
+			{
+				margin-top: 25px;
+			}
+			
+			.header::before
+			{
+				display: block;
+				content: " ";
+				margin-top: -25px;
+				height: 25px;
+				visibility: hidden;
+				pointer-events: none;
+			}
+			
+			.btn
+			{
+				background-color: #8b0000;
+				border-color: #333;
+			}
+			
+			.badge
+			{
+				background: #8b0000;
+			}
+			
+			.mobile
+			{
+				display: none;
+			}
+			
+			.description
+			{
+				font-size: 20px;
+			}
+		
+			@media (max-width: 1000px)
+			{
+				.mobile
+				{
+					display: inline;
+				}
+				
+				.nonmobile
+				{
+					display: none;
+				}
+				
+				.display-1
+				{
+					text-align: center;
+				}
+				
+				.header::before
+				{
+					display: block;
+					content: " ";
+					margin-top: -75px;
+					height: 75px;
+					visibility: hidden;
+					pointer-events: none;
+				}	
+				
+				.description
+				{
+					font-size: 17px;
+				}
+			}
+			
+			@media (max-width: 767px)
+			{
+				.description
+				{
+					font-size: 12px;
+				}
+			}
+			
+			@media (max-width: 575px)
+			{
+				#about
+				{
+					margin-top: 25px;
+				}
+				
+				#profile
+				{
+					margin: 0px;
+					padding: 0px;
+					width: 100%;
+				}
+				
+				#secondrow
+				{	
+					margin-top: 0;
+				}
+				
+				.header::before
+				{
+					display: block;
+					content: " ";
+					margin-top: -225px;
+					height: 225px;
+					visibility: hidden;
+					pointer-events: none;
+				}	
+				
+				.description
+				{
+					font-size: 17px;
+				}
+				
+				.col-sm
+				{
+					text-align: center;
+				}
+				
+				.card
+				{
+					margin-top: 15px;
+				}
+			}
+			
+			@media (max-width: 525px)
+			{
+				.display-1
+				{
+					font-size: 75px;
+				}
+			}
+		</style>
+	</head>
+	
+	<body data-spy="scroll" data-target=".navbar" data-offset="150">
+		<!-- Header -->
+		<div class="jumbotron jumbotron-fluid bg-dark mb-0" id="home" style="background:linear-gradient(#8b0000, #343a40);">
+			<div class="container">
+				<img src="assets/pictures/profile.jpg" class="float-left img-fluid rounded shadow nonmobile" alt="profile picture" width="275">
+				<h1 class="display-1" style="color:white;"><span class="align-text-top nonmobile" style="color:#333">|</span> Craig Fouts</h1>
+			</div>
+		</div>
+		<!-- Header -->
+		
+		<!-- Nav bar -->
+		<nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top" style="background-color:black;">
+			<a class="navbar-brand" href="https://www.craigfouts.com">
+				<img src="assets/pictures/logo.png" width="30" alt="logo">
+			</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar"><span class="navbar-toggler-icon"></span></button>
+			<div class="collapse navbar-collapse" id="collapsibleNavbar">
+				<ul class="navbar-nav" data-toggle="collapse" data-target=".navbar-collapse.show">
+					<li class="nav-item">
+						<a class="nav-link" href="#home">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#projects">Projects <span class="badge">2</span></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#math">Math <span class="badge">4</span></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="https://teespring.com/shop/broken-trefoil?aid=marketplace&tsmac=marketplace&tsmic=search&pid=2" target="_blank">Merch</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+		<!-- Nav bar -->
+		
+		<div class="container" style="margin-top:25px; margin-bottom:25px;">
+			
+			<!-- About me -->
+			<div class="row">
+				<div class="col-sm text-center mobile">
+					<img src="assets/pictures/profile.jpg" class="img-fluid rounded shadow" alt="profile picture" id="profile" width="300">
+				</div>
+				<div class="col-sm" id="about" style="margin-top:5px;">
+					<h1 class="display-4">About</h1>
+					<p class="description" id="description">
+						Hello, welcome to my website! I am currently a second year student at 
+						<a href="https://www.asc.ohio-state.edu/kilcup.1/the.html" target="_blank" style="color:black;">The</a> Ohio State University studying 
+						Mathematics and Engineering Physics with a concentration in Computer Science. In the past I developed some simple GUIs and robotic systems. In 
+						the future I am interested in exploring machine learning.
+					</p>
+				</div>
+			</div>
+			<!-- About me -->
+			
+			<!-- Projects -->
+			<div class="row" style="margin-top:25px">
+				<div class="col-sm">
+					<h1 class="display-4 header" id="projects">Projects</h1>
+				</div>
+			</div>
+			<div class="row" style="margin-top:25px; margin-bottom:25px;">
+				<div class="col-sm">
+					<div class="card shadow-lg" style="width:100%;">
+						<h6 class="card-header rounded bg-dark text-white">Virtual Assistant</h5>
+						<div class="card-body rounded bg-secondary">
+							<p class="card-text">Aiva is an Artificially Intelligent Virtual Assistant designed to handle basic tasks via talk or text. The home window 
+							provides access to textual searches - internet or local - as well as a menu bar by which the user can access settings. When the assistant 
+							opens for the first time, a login window is displayed with a default username and password of "root," though the user's credentials and 
+							other settings can be changed.</p>
+							<a href="https://youtu.be/I678pnngZxk" target="_blank" class="btn btn-primary">Demos</a>
+							<a href="https://github.com/cwpfautz/Virtual-Assistant" target="_blank" class="btn btn-primary">Source</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm">
+					<div class="card shadow-lg" style="width:100%;">
+						<h6 class="card-header rounded bg-dark text-white">Remote Light Switch</h5>
+						<div class="card-body rounded bg-secondary">
+							<p class="card-text">This is just something I found myself working on when work was cancelled one day due to a snow storm. The light switch 
+							works by using an IR sensor to detect IR blasts from something like a TV remote. The switch can be programmed to detect specific buttons on 
+							the TV remote, though only within a certain distance. In addition, I included temperature and humidity sensors because... I had room... Why 
+							not, right?</p>
+							<a href="https://youtu.be/1Q7X5suj3NU" target="_blank" class="btn btn-primary">Demos</a>
+							<a href="#" class="btn btn-primary" data-toggle="modal" data-target="#rlspop">Source</a>
+						</div>
+					</div>
+				</div>							
+			</div>
+			<!-- Projects -->
+			
+			<!-- Math -->
+			<div class="row" style="margin-top:50px;">
+				<div class="col-sm">
+					<h1 class="display-4 header" id="math">Math</h1>
+				</div>
+			</div>
+			<div class="row" style="margin-top:25px;">
+				<div class="col-sm">
+					<div class="card shadow-lg" style="width:100%">
+						<h6 class="card-header rounded bg-dark text-white">Bertrand's Postulate</h5>
+						<div class="card-body rounded bg-secondary">
+							<p class="card-text">Bertrand's Postulate was first described as a conjecture in 1845 by Joseph Bertrand, who later proved it for all 
+							numbers between 3 and 3,000,000. Because the statement was completely proved by Pafnuty Chebyschev in 1852, the postulate is often referred
+							to as the "Bertrand-Chebyshev Theorem" or "Chebyshev's Theorem." The theorem states that for any integer x greater than 3, there exists at 
+							least one prime number between x and 2x-2.</p>
+							<a href="https://github.com/cwpfautz/Math/blob/master/Python/Bertrand.py" target="_blank" class="btn btn-primary">Python</a>
+							<a href="#" class="btn btn-primary" data-toggle="modal" data-target="#cpppop">C++</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm">
+					<div class="card shadow-lg" style="width:100%">
+						<h6 class="card-header rounded bg-dark text-white">Collatz's Conjecture</h5>
+						<div class="card-body rounded bg-secondary">
+							<p class="card-text">Also known as "Hasse's Algorithm" and the "3n+1 Conjecture," the Collatz Conjecture observes an assumption regarding 
+							sequences of known positive integers. The conjecture states that if the current integer is even, the term that follows it is half the current term. Otherwise, the following term is the current term multiplied by 3 then added to 1. By these rules, the sequence is stated to eventually terminate at 1, regardless of the initial integer.</p>
+							<a href="https://github.com/cwpfautz/Math/blob/master/Python/Collatz.py" target="_blank" class="btn btn-primary">Python</a>
+							<a href="#" class="btn btn-primary" data-toggle="modal" data-target="#cpppop">C++</a>						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row" style="margin-bottom:25px;" id="secondrow">
+				<div class="col-sm">
+					<div class="card shadow-lg" style="width:100%">
+						<h6 class="card-header rounded bg-dark text-white">Goldbach's Conjecture</h5>
+						<div class="card-body rounded bg-secondary">
+							<p class="card-text">One of the oldest unsolved problems in number theory, Goldbach's conjecture was first proposed in a letter to Leonard 
+							Euler in 1742. Christian Goldbach's idea states that if an integer is even and greater than 2, then it can be expressed as the sum of at 
+							least one set of two primes. For example, 6 can be expressed as 3+3 and 8 can be expressed as 3+5. Goldbach's conjecture has been proved for 
+							integers up to 4E18, though it has yet to be solved entirely.</p>
+							<a href="https://github.com/cwpfautz/Math/blob/master/Python/Goldbach.py" target="_blank" class="btn btn-primary">Python</a>
+							<a href="#" class="btn btn-primary" data-toggle="modal" data-target="#cpppop">C++</a>						</div>
+					</div>
+				</div>
+				<div class="col-sm">
+					<div class="card shadow-lg" style="width:100%">
+						<h6 class="card-header rounded bg-dark text-white">Wilson's Theorem</h5>
+						<div class="card-body rounded bg-secondary">
+							<p class="card-text">Proved by Joseph-Louis Langrange in 1770, Wilson's Theorem was proposed by John Wilson in 18th century to determine 
+							whether or not a positive integer is a prime number. The theorem states that if the factorial of a number minus 1 in the modulo of that number 
+							equals -1 in the modulo of that number, then the number is prime. For example, the number 2, a known prime number, statisfies this theorem because 
+							the factorial of 2-1 is equal to -1 mod 2.</p>
+							<a href="https://github.com/cwpfautz/Math/blob/master/Python/Wilson.py" target="_blank" class="btn btn-primary">Python</a>
+							<a href="#" class="btn btn-primary" data-toggle="modal" data-target="#cpppop">C++</a>						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Math -->
+		</div>
+		
+		<!-- Footer -->
+		<footer class="footer">
+			<div class="text-center center-block">
+				<a href="https://www.facebook.com/cwpfautz" target="_blank">
+					<i class="fab fa-facebook-square fa-3x"></i>
+				</a>
+				<a href="https://www.instagram.com/cwpfautz/" target="_blank">
+					<i class="fab fa-instagram fa-3x"></i>
+				</a>
+				<a href="mailto:cwpfautz@gmail.com">
+					<i class="fas fa-envelope-square fa-3x"></i>
+				</a>
+			</div>
+		</footer>
+		<!-- Footer -->
+		
+		<!-- Popups -->
+		<div id="rlspop" class="modal fade" role="dialog">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-body">
+						<p>I can't find the code for this project. I'll do a new version with the STM32 F3 Discovery at some point in the near future.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="cpppop" class="modal fade" rold="dialog">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-body">
+						<p>In progress...</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Popups -->
+	</body>
+</html>pcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 		<script src="https://kit.fontawesome.com/7f264956e9.js" crossorigin="anonymous"></script>		
 		<title>Craig Fouts</title>
 		
