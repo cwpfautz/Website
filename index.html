@@ -21,6 +21,11 @@
 				scroll-behavior: smooth;
 			}
 			
+			body
+			{
+				background-color: #343a40;
+			}
+			
 			footer
 			{
 				width: 100%;
@@ -30,13 +35,13 @@
 			
 			footer a 
 			{
-				color: #333;
+				color: #8b0000;
 				margin: 25px;
 			}
 			
 			footer a:hover
 			{
-				color: #eb0000;
+				color: #007bff;
 				text-decoration: none;
 			}
 			
@@ -55,34 +60,32 @@
 				pointer-events: none;
 			}
 			
-			.navbar-brand
+			.jumbotron
 			{
-				display: none;
-				position: relative;
-				right: 100%;
+				background-image: url(".assets/pictures/banner.jpg");
+				background-size: cover;
+				
 			}
 			
-			#nav-name
+			.navbar-brand
 			{
-				color: white;
+				margin-left: 5%;
+			}
+			
+			#collapsibleNavbar
+			{
+				margin-right: 5%;
 			}
 			
 			.btn
 			{
-				background-color: #333;
+				background-color: #8b0000;
 				border-color: #333;
-			}
-			
-			.btn:hover
-			{
-				background-color: #eb0000;
-				border-color: #eb0000;
 			}
 			
 			.badge
 			{
-				background: #eb0000;
-				color: #333;
+				background: #8b0000;
 			}
 			
 			.card
@@ -92,11 +95,6 @@
 			}
 			
 			.mobile
-			{
-				display: none;
-			}
-			
-			.phone
 			{
 				display: none;
 			}
@@ -133,18 +131,6 @@
 					pointer-events: none;
 				}	
 				
-				.navbar-brand
-				{
-					display: block;
-				}
-				
-				.navbar .navbar-nav
-				{
-					position: absolute;
-					left: 50%;
-					transform: translatex(-50%);
-				}
-				
 				.description
 				{
 					font-size: 17px;
@@ -154,7 +140,7 @@
 			}
 			
 			@media (max-width: 767px)
-			{				
+			{
 				.description
 				{
 					font-size: 12px;
@@ -175,11 +161,6 @@
 					width: 100%;
 				}
 				
-				#name
-				{
-					display: none;
-				}
-				
 				#secondrow
 				{	
 					margin-top: 0;
@@ -197,18 +178,9 @@
 					z-index: 1;
 				}	
 				
-				.navbar .navbar-nav 
+				.navbar-brand
 				{
-					transform: translatex(0%);
-					position: static;
-					display: inline-block;
-					float: none;
-					vertical-align: top;
-				}
-				
-				.navbar .navbar-collapse 
-				{
-					text-align: center;
+					margin-left: 1%;
 				}
 				
 				.description
@@ -225,11 +197,6 @@
 				{
 					margin-top: 15px;
 				}
-
-				.phone
-				{
-					display: block;
-				}
 			}
 			
 			@media (max-width: 525px)
@@ -244,22 +211,24 @@
 	
 	<body data-spy="scroll" data-target=".navbar" data-offset="150">
 		<!-- Header -->
-		<div class="jumbotron jumbotron-fluid bg-dark mb-0" id="home" style="background:linear-gradient(#000000, #343a40);">
+		<div class="jumbotron jumbotron-fluid bg-dark mb-0" id="home" style="background:linear-gradient(#403434, #343a40);">
+			<!--
 			<div class="container">
 				<img src="assets/pictures/profile.jpg" class="float-left img-fluid rounded shadow nonmobile" alt="profile picture" width="250">
-				<h1 class="display-1" id="name" style="color:white;"><span class="align-text-top nonmobile" style="color:#eb0000">|</span> Craig Fouts</h1>
+				<h1 class="display-1" style="color:white;"><span class="align-text-top nonmobile" style="color:#333">|</span> Craig Fouts</h1>
 			</div>
+			-->
 		</div>
 		<!-- Header -->
 		
 		<!-- Nav bar -->
-		<nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top" style="background-color:black;">
+		<nav class="navbar navbar-expand-sm navbar-dark sticky-top center">
 			<a class="navbar-brand" href="https://www.craigfouts.com">
 				<img src="assets/pictures/logo.png" width="30" alt="logo">
+				<span style="color:white">About Me</span>
 			</a>
-			<h4 class="phone" id="nav-name">Craig Fouts</h4>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar"><span class="navbar-toggler-icon"></span></button>
-			<div class="collapse navbar-collapse" id="collapsibleNavbar">
+			<div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
 				<ul class="navbar-nav" data-toggle="collapse" data-target=".navbar-collapse.show">
 					<li class="nav-item">
 						<a class="nav-link" href="#home">Home</a>
@@ -282,22 +251,17 @@
 			
 			<!-- About me -->
 			<div class="row">
-				<div class="col-sm text-center mobile">
-					<img src="assets/pictures/profile.jpg" class="img-fluid rounded shadow" alt="profile picture" id="profile" width="300">
-				</div>
 				<div class="col-sm" id="about" style="margin-top:5px;">
 					<h1 class="display-4">About</h1>
 					<p class="description" id="description">
-						Hello, welcome to my virtual resume! I am currently a third year student at 
+						Hello, welcome to my website! I am currently a second year student at 
 						<a href="https://www.asc.ohio-state.edu/kilcup.1/the.html" target="_blank" style="color:black;">The</a> Ohio State University studying 
-						Mathematics and Computer Science with a minor in Physics. In the past I've mostly focussed on GUI development on robotics. In future
-						projects, though, I am interested in exploring the fields of artificial intelligence, cellular automata, and cyber security.
+						Mathematics and Computer Science with a minor in Physics. In the past I developed some simple GUIs and robotic systems. In 
+						the future I am interested in exploring machine learning, cybersecurity, and cellular automaton.
 					</p>
 				</div>
 			</div>
 			<!-- About me -->
-			
-			<hr>
 			
 			<!-- Projects -->
 			<div class="row" style="margin-top:25px">
@@ -334,8 +298,6 @@
 				</div>							
 			</div>
 			<!-- Projects -->
-			
-			<hr>
 			
 			<!-- Math -->
 			<div class="row" style="margin-top:50px;">
@@ -406,12 +368,10 @@
 			<!-- Math -->
 		</div>
 		
-		<hr>
-		
 		<!-- Footer -->
 		<footer class="footer">
 			<div class="text-center center-block">
-				<a href="https://www.facebook.com/foutscw" target="_blank">
+				<a href="https://www.facebook.com/cwpfautz" target="_blank">
 					<i class="fab fa-facebook-square fa-3x"></i>
 				</a>
 				<a href="https://www.instagram.com/cwpfautz/" target="_blank">
